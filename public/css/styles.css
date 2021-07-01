@@ -330,7 +330,7 @@ form .check div{
     header{
         position: static;
     }
-    main{
+    main, .main2{
         padding-top: 0px;
     }
 }
