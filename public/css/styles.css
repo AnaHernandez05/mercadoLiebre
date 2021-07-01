@@ -129,6 +129,7 @@
      margin-top: 500px;
     margin: auto;
     width: 90vw;
+    padding-top: 200px;
  }
 .productos{
     display: flex;
@@ -164,6 +165,7 @@ div.bux input::after{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: 200px;
 }
 form .main{
     background-color:#ebebeb;;
