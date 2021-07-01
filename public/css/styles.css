@@ -1,0 +1,367 @@
+ *{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+ .head img{
+    animation: logoMov 1s ease-in infinite alternate;
+ }
+ header{
+     position: fixed;
+     z-index: 10000;
+    background-color: #EAC926;
+ }
+ header nav{
+     display: none;
+ } 
+ body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    color: black;
+    background-color: #ebebeb;
+ }
+ img{
+    width: 80vw; 
+    margin: 10px 15px 0px;
+ }
+ .logo img{
+    width: 100vw; 
+    margin: 5px 5px 5px;
+    text-align: center;
+ }
+ h2{
+     font-size: 24px;
+     margin: 10px;
+     text-align: center;
+ }
+ .articulos-datos h3{
+     display: none;
+ }
+ .precio{
+     font-size: 18px;
+     display: inline;
+ }
+ .descuento{
+    color: green;
+    font-size: 16px;
+    display: inline;
+    margin: 10px;
+ }
+ h3{
+    font-size: 16px;
+    display: none;
+ }
+ .menu i{
+     font-size: 2em;
+     background-color:  #1259c3;
+     padding: 10px;
+     margin: 10px;
+ }
+ .ico{
+     text-align: center;
+     margin: 10px;
+ }
+ .icotamano i{
+    font-size: 1.3em;
+ }
+ footer{
+     text-align: center;
+     width: 80vw;
+     padding: 30px;
+     margin: auto;
+ }
+ .ico-footer{
+     font-size: 2em;
+     color: #1259c3;
+     transition-property: color;
+    transition-duration: 1s;
+ }
+ main >section article{
+     background-color: #ebebeb;
+     margin: 10px;
+ }
+ .copy{
+     text-align:justify;
+     margin: 0%;
+ }
+ .buscar{
+     color: dimgray;
+     border: solid black 2px;
+     background-color: white;
+     padding: 10px;
+     text-align: center;
+     display: inline;
+     font-size: 10px;
+ }
+ .bu{
+     display: inline;
+     font-size: 15px;
+     border: solid black 2px;
+     background-color: white;
+     text-align: center;
+ }
+ .envio{
+     font-size: 20px;
+     color: green;
+     position: relative;
+ }
+ .envio i{
+    display: block;
+    border: green solid 1px;
+    border-radius: 50%;
+    background-color: #FFF;
+    font-size: 20px;
+    padding: 10px;
+    position: absolute;
+    right: 20px;
+    top: -40px;
+    transition-property: transform;
+ }
+
+ article .articulos-datos{
+    border: 1px solid #ebebeb;
+    background-color: white;
+    padding: 15px;
+    width: 80vw;
+    margin: 1px 15px 0px;
+ }
+ main{
+     margin-top: 500px;
+    margin: auto;
+    width: 90vw;
+ }
+.productos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.productos article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.head img{
+    width: 50%;
+    margin: 0;
+}
+.head{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    align-items: center;
+}
+div.bux input::after{
+    content: "🔍";
+}
+.menu{
+    text-align: center;
+}
+.main2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+form .main{
+    background-color:#ebebeb;;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items: flex-start;
+    width: 60vw;
+    padding: 5px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    border: solid 1px black;
+    padding: 10px;
+    margin: 30px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+.checka{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+form *{
+    margin: 5px;
+    font-size: 14px;
+    padding: 1px;
+}
+input, textarea{
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    height: 20px;
+}
+button{
+    margin-left: 10%;
+    width: 80%;
+    background-color:   aqua;
+    border-radius: 10px;
+    border: none;
+    font-size: 18px;
+    transition-property: background-color;
+    transition-duration: 1s;
+}
+.main2 h1{
+    font-size: 22px;
+    font-weight: bold;
+    margin: 10px;
+    margin-bottom: 5px;
+    margin-top: 20px;
+}
+label{
+    font-weight: bold;
+    font-size: 16px;
+}
+form .check{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+form .check div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 20%;
+}
+@media (min-width: 361px){
+    h3{
+        font-size: 2em;
+        display: block;
+    }
+    main article{
+        box-shadow: 0px 0px 25px rgb(100, 100, 100);
+    }
+    main{
+        padding-top: 280px;
+    }
+    header nav{
+        display: block;
+    }
+    .menu{
+        display: none;
+    }
+    main section div.productos{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items:stretch;
+    }
+    div.productos article{
+        width: 45%;
+    }
+    img, article .articulos-datos{
+        width: 80%;
+    }
+}
+.logo img{
+    width: 100vw;
+}
+@media (min-width: 460px){
+    header nav ul li{
+        display: inline;
+    }
+    main{
+        padding-top: 250px;
+    }
+    header nav{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:space-around;
+    }
+}
+@media (min-width: 769px){
+    header{
+        position: static;
+        z-index: 1000;
+    }
+    div.productos article{
+        width: 20%;
+    }
+    img, article .articulos-datos, .envio{
+        width: 100%;
+    }
+    .logo img{
+        width: 100vw;
+    }
+    form{
+        width: 70vw;
+    }
+    div.bux input{
+        width: 170px;
+    }
+    footer{
+        margin: 0px;
+        padding: 0px;
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 20px;
+    }
+    footer section div{
+        display: flex;
+        flex-direction: column;
+    }
+    footer section{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 0px;
+        padding: 15px;
+        width: 30vw;
+    }
+    header{
+        position: static;
+    }
+    main{
+        padding-top: 0px;
+    }
+}
+@media (min-width: 1200px){
+    header{
+        position: static;
+    }
+    main{
+        padding-top: 0px;
+    }
+}
+main section article img:hover ~ .articulos-datos h3{
+    display: inline-block;
+}
+main section article img:hover{
+    box-shadow: 0px 0px 25px blue;
+}
+.envio i{
+    animation: carrito 5s infinite;
+}
+.ico-footer:hover{
+    color:   #EAC926;
+}
+button:hover{
+    background-color:   #0022AA;
+}
+@keyframes carrito {
+    0% { transform: rotate(-90deg) }
+    25% {transform: rotate(360deg)}
+    100% {transform: rotate(-180deg) }
+}
+@keyframes logoMov {
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1,1.5);
+    }
+}
