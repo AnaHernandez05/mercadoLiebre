@@ -274,7 +274,7 @@ form .check div{
     header nav ul li{
         display: inline;
     }
-    main{
+    main, .main2{
         padding-top: 250px;
     }
     header nav{
