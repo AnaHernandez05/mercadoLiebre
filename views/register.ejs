@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+            <%- include('head') %>
+<body>
+            <%- include('header') %>
+    <main class="main2">
+        <h1>REGISTRARSE</h1>
+        <form class="main">
+            <input type="text" placeholder="Nombre y Apellido" minlength="5" required>
+            <input type="text" placeholder="Nombre de usuario" minlength="5" required>
+            <input type="email" placeholder="Email" minlength="10" required>
+            <label for="date">Fecha de nacimiento</label>
+            <input type="date" name="date" id="date" required>
+            <textarea placeholder="Domicilio" minlength="15" required></textarea>
+            <label for="perfil">Perfil del usuario</label>
+        <div class="checka">
+            <input type="radio" name="perfil" id="perfil" value="Comprador"> Comprador
+            <input type="radio" name="perfil" id="perfil" value="Vendedor"> Vendedor
+        </div>
+            <label for="interes">Intereses</label>
+        <div class="check">
+           <div><input type="checkbox" name="interes" id="interes" value="Electro">Electro</div>
+           <div><input type="checkbox" name="interes" id="interes" value="Moda">Moda</div>
+           <div><input type="checkbox" name="interes" id="interes" value="Hogar">Hogar</div>
+           <div><input type="checkbox" name="interes" id="interes" value="Jugue">Jugueteria</div>
+           <div><input type="checkbox" name="interes" id="interes" value="VidaSana">Vida Sana</div>
+        </div>
+            <label for="foto">Foto de usuario</label>
+            <input type="file" name="foto" id="foto">
+            <input type="password" name="password" id="password" placeholder="Contraseña" minlength="8" required>
+            <input type="password" name="passwordConfirm" id="passwordConfirm" placeholder="Confirmar Contraseña" minlength="8" required>
+            <button type="submit">Enviar</button>
+            <button type="reset">Borrar</button>
+        </form>
+    </main>
+             <%- include('footer') %>
+</body>
+</html>
